@@ -31,17 +31,14 @@ The solution integrates **UiPath RPA** for inbox automation and **FastAPI + SQLi
 7. [Running the System](#running-the-system)
 8. [UiPath Workflow Integration](#uipath-workflow-integration)
 9. [Email Classification Logic](#email-classification-logic)
-10. [Screenshots / UI Flow](#screenshots--ui-flow)
-11. [Limitations & Future Work](#limitations--future-work)
-12. [Contributors](#contributors)
+10. [Limitations & Future Work](#limitations--future-work)
+11. [Contributors](#contributors)
 
 ---
 
 # Project Motivation
 
-Students frequently miss critical placement updates because important emails get buried among routine university messages. As described in the project report :
-
-> Students are exposed to an overwhelming volume of daily emails, and manually identifying critical placement-related communication is inefficient and error-prone. Important details such as eligibility criteria, deadlines, interview schedules, and shortlists are often missed.
+Students are exposed to an overwhelming volume of daily emails, and manually identifying critical placement-related communication is inefficient and error-prone. Important details such as eligibility criteria, deadlines, interview schedules, and shortlists are often missed.
 
 This project solves that problem by creating an automated system that transforms raw inbox data into **structured, actionable insights** that students can trust.
 
@@ -97,7 +94,7 @@ Includes:
 * Signup & login
 * User profile view
 * Dashboard showing categorized emails
-* Embedded summaries, eligibility status, deadline cards, calendar buttons
+* Embedded summaries, calendar buttons
 
 ---
 
@@ -107,7 +104,7 @@ Includes:
 
 ```
                 ┌──────────────┐
-                │ Student Inbox │
+                │ Student Inbox│
                 └───────┬──────┘
                         │ (RPA reads emails)
                   ┌─────▼──────┐
@@ -119,12 +116,12 @@ Includes:
                   │   FastAPI API  │
                   └─────┬──────────┘
                         │
-      ┌─────────────────▼────────────────┐
-      │ Classification | Eligibility | LLM│
-      └─────────────────┬────────────────┘
+      ┌─────────────────▼──────────────────┐
+      │ Classification | Eligibility | LLM │
+      └─────────────────┬──────────────────┘
                         │
                ┌────────▼─────────┐
-               │  SQLite Database  │
+               │  SQLite Database │
                └────────┬─────────┘
                         │
               ┌─────────▼──────────┐
@@ -141,7 +138,7 @@ Each component communicates seamlessly, forming a hybrid **RPA + AI-driven acade
 
 ### Backend
 
-* **Python 3.x**
+* **Python**
 * **FastAPI**
 * **SQLite (users.db)**
 * **SQLAlchemy ORM**
@@ -165,17 +162,6 @@ Each component communicates seamlessly, forming a hybrid **RPA + AI-driven acade
 * LLM-based summarization
 * Semantic extraction
 * Deadline recognition
-
-### Deployment Ready
-
-* Can be deployed on:
-
-  * Render
-  * Railway
-  * GitHub Pages (frontend only)
-  * EC2 / DigitalOcean
-
----
 
 # System Workflow
 
