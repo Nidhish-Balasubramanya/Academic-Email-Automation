@@ -4,7 +4,7 @@
 
 ### Overview
 
-VIT Campus Alerts is an intelligent email-automation platform designed to help students manage the overwhelming volume of placement-related communication. Students at VIT receive dozens of emails every week containing recruitment announcements, deadlines, shortlists, and general academic notifications. Monitoring these manually is time-consuming and often leads to missed opportunities.
+It is an intelligent email-automation platform designed to help students manage the overwhelming volume of placement-related communication. Students at VIT receive dozens of emails every week containing recruitment announcements, deadlines, shortlists, and general academic notifications. Monitoring these manually is time-consuming and often leads to missed opportunities.
 
 This system automates the entire workflow:
 
@@ -193,8 +193,8 @@ Each component communicates seamlessly, forming a hybrid **RPA + AI-driven acade
 ### Step 1: Clone Repository
 
 ```
-git clone https://github.com/Nidhish-Balasubramanya/VIT-Campus-Alerts
-cd VIT-Campus-Alerts
+git clone https://github.com/Nidhish-Balasubramanya/Academic-Email-Automation
+cd Academic-Email-Automation
 ```
 
 ### Step 2: Create Virtual Env
